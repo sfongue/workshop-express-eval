@@ -9,6 +9,10 @@ app.get('/', function(req, res) {
   res.end('Hello World!')
 });
 
+app.get('/bingo', function(req, res) {
+  res.end('Bingo')
+});
+
 app.listen(port);
 
 // start server here
