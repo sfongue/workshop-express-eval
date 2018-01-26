@@ -3,7 +3,7 @@ let chalk = require('chalk');
 const app = require('./src/app');
 
 // port
-const port = 3000;
+const port = process.argv[2];
 
 app.get('/', function(req, res) {
   res.end('Hello World!')
